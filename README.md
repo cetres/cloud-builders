@@ -14,7 +14,7 @@ Image for build and upload to a [pypi Google Cloud Artifact Registry](https://cl
 
 ```yaml
 steps:
-- name: 'pypi-tools'
+- name: 'gcr.io/$PROJECT_ID/pypi-tools'
   env:
   - 'TWINE_REPOSITORY_URL=https://$LOCATION-pypi.pkg.dev/$PROJECT/$REPOSITORY/'
   args:
