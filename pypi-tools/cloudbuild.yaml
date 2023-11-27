@@ -6,3 +6,5 @@ steps:
   - '.'
 images:
 - 'gcr.io/$PROJECT_ID/pypi-tools'
+options:
+  logging: CLOUD_LOGGING_ONLY

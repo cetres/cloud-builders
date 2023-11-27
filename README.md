@@ -3,6 +3,10 @@
 Deploy
 ```sh
 gcloud builds submit --config=cloudbuild.yaml .
+
+or 
+
+gcloud builds submit --project=cetres --config=cloudbuild.yaml .
 ```
 
 ## pypi-tools

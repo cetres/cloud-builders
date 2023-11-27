@@ -1,8 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args:
-  - 'build'
-  - '--tag=gcr.io/$PROJECT_ID/firebase'
-  - '.'
-images:
-- 'gcr.io/$PROJECT_ID/firebase'
+  args: ['build', '-t', 'us-docker.pkg.dev/$PROJECT_ID/build/firebase', '.']
+images: ['us-docker.pkg.dev/$PROJECT_ID/build/firebase']
+options:
+  logging: CLOUD_LOGGING_ONLY
